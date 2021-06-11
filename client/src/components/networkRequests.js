@@ -1,11 +1,11 @@
 export const getAllSongs = async () => {
-    const songs = await fetch("http://localhost:3030/songs");
+    const songs = await fetch("https://d1104cuav9b00q.cloudfront.net/songs");
     return songs.json();
 }
 
 export const addSongs = async (song) => {
     try {
-        const holdResponse = await fetch("http://localhost:3030/songs", {
+        const holdResponse = await fetch("https://d1104cuav9b00q.cloudfront.net/songs", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

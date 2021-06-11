@@ -14,6 +14,7 @@ class App extends React.Component {
     return (
     <div>
       <h1>Lucian's Video Music Box</h1>
+      <img src= "./old-school-music-players.jpg" ></img>
       <Home/>
     </div>)
   }
